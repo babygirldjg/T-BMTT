@@ -25,7 +25,7 @@ def FillerLetter(text):
                 text = FillerLetter(text)
                 break
     else:
-        text += 'x'  # Thêm một ký tự 'z' vào cuối nếu độ dài là số lẻ
+        text += 'x'
         for i in range(0, k, 2):
             if text[i] == text[i + 1]:
                 text = text[:i + 1] + 'x' + text[i + 1:]
